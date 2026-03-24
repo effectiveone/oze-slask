@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+<Layout title="OZE Śląsk — Energia odnawialna na Górnym Śląsku">
+  <section style="padding:4rem 0;border-bottom:1px solid var(--border);">
+    <div class="container">
+      <p style="font-family:'Roboto Mono',monospace;color:var(--accent);font-size:0.8rem;margin-bottom:0.75rem;">// STATUS: ONLINE — portal OZE dla Śląska</p>
+      <h1 style="font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin-bottom:1rem;">
+        <span style="color:var(--blue);">OZE</span>
+        <span style="color:var(--text);"> na </span>
+        <span style="color:var(--accent);">Górnym Śląsku</span>
+      </h1>
+      <p style="font-size:1.05rem;color:var(--text-muted);max-width:560px;margin-bottom:1.5rem;">Transformacja energetyczna regionu przemysłowego. Dane, analizy i aktualności o OZE na Śląsku.</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="/blog" style="background:var(--blue);color:var(--bg);padding:0.6rem 1.4rem;font-weight:700;border-radius:2px;">_artykuły</a>
+        <a href="https://ecoaudyt.app" target="_blank" style="border:1px solid var(--accent);color:var(--accent);padding:0.6rem 1.4rem;font-family:'Roboto Mono',monospace;font-size:0.85rem;">audyt.app →</a>
+      </div>
+    </div>
+  </section>
+  <section class="container" style="padding:2.5rem 1.5rem 3rem;">
+    {posts.length > 0 ? (
+      <>
+        <p style="font-family:'Roboto Mono',monospace;color:var(--text-muted);font-size:0.8rem;margin-bottom:1.25rem;">// LATEST_POSTS[{posts.length}]</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem;">
+          {posts.slice(0,6).map(p => <PostCard title={p.data.title} description={p.data.description} slug={p.slug} pubDate={p.data.pubDate} tags={p.data.tags} />)}
+        </div>
+      </>
+    ) : (
+      <div style="text-align:center;padding:4rem 0;font-family:'Roboto Mono',monospace;">
+        <p style="color:var(--blue);font-size:1.1rem;">// loading content...</p>
+        <p style="color:var(--text-muted);margin-top:0.5rem;font-size:0.85rem;">Artykuły pojawią się wkrótce</p>
+      </div>
+    )}
+  </section>
+</Layout>

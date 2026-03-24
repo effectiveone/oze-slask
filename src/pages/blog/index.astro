@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+const posts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+<Layout title="Artykuły — OZE Śląsk">
+  <div class="container" style="padding:2.5rem 1.5rem 3rem;">
+    <p style="font-family:'Roboto Mono',monospace;color:var(--accent);font-size:0.75rem;margin-bottom:0.4rem;">// ARCHIVE</p>
+    <h1 style="color:var(--blue);font-size:2rem;margin-bottom:0.5rem;">Artykuły ({posts.length})</h1>
+    <hr style="border:none;border-top:1px solid var(--border);margin-bottom:2rem;"/>
+    {posts.length > 0 ? (
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem;">
+        {posts.map(p => <PostCard title={p.data.title} description={p.data.description} slug={p.slug} pubDate={p.data.pubDate} tags={p.data.tags} />)}
+      </div>
+    ) : <p style="font-family:'Roboto Mono',monospace;color:var(--text-muted);padding:3rem 0;text-align:center;">// no posts yet</p>}
+  </div>
+</Layout>

@@ -1,0 +1,27 @@
+---
+interface Props { title: string; description: string; slug: string; pubDate: Date; tags?: string[]; }
+const { title, description, slug, pubDate, tags } = Astro.props;
+const dateStr = new Date(pubDate).toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric' });
+---
+<article class="dark-card">
+  <div class="dark-card-header">
+    <span class="dark-date">{dateStr}</span>
+    <div class="dark-tags">{tags?.map(t => <span class="dark-tag">{t}</span>)}</div>
+  </div>
+  <h2><a href={`/blog/${slug}`}>{title}</a></h2>
+  <p>{description}</p>
+  <a href={`/blog/${slug}`} class="dark-read">read_more() →</a>
+</article>
+<style>
+.dark-card { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--blue); padding: 1.4rem; transition: border-color 0.2s, box-shadow 0.2s; }
+.dark-card:hover { border-left-color: var(--accent); box-shadow: 0 0 20px rgba(79,195,247,0.1); }
+.dark-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+.dark-date { font-family: 'Roboto Mono', monospace; font-size: 0.75rem; color: var(--text-muted); }
+.dark-tags { display: flex; gap: 0.4rem; }
+.dark-tag { background: var(--surface2); color: var(--blue); font-family: 'Roboto Mono', monospace; font-size: 0.65rem; padding: 0.1rem 0.5rem; border: 1px solid var(--blue-dim); }
+.dark-card h2 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+.dark-card h2 a { color: var(--text); }
+.dark-card h2 a:hover { color: var(--blue); }
+.dark-card p { font-size: 0.87rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 0.9rem; }
+.dark-read { font-family: 'Roboto Mono', monospace; font-size: 0.78rem; color: var(--accent); border-bottom: 1px dashed var(--accent); }
+</style>

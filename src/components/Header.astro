@@ -1,0 +1,35 @@
+---
+---
+<header class="dark-header">
+  <div class="container dark-header-inner">
+    <a href="/" class="dark-logo">
+      <span class="logo-spark">⚡</span>
+      <div>
+        <span class="logo-name">OZE <span class="logo-region">ŚLĄSK</span></span>
+        <span class="logo-sub">// energy.slask.pl</span>
+      </div>
+    </a>
+    <nav class="dark-nav">
+      <a href="/">_home</a>
+      <a href="/blog">_artykuły</a>
+      <a href="https://ecoaudyt.app" target="_blank" rel="noopener" class="dark-nav-cta">[ audyt → ]</a>
+    </nav>
+  </div>
+  <div class="header-glow"></div>
+</header>
+
+<style>
+.dark-header { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+.dark-header-inner { display: flex; justify-content: space-between; align-items: center; padding: 0.9rem 1.5rem; }
+.dark-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+.logo-spark { font-size: 1.6rem; filter: drop-shadow(0 0 8px var(--blue)); }
+.logo-name { display: block; font-family: 'Roboto Mono', monospace; font-weight: 600; font-size: 1.1rem; color: var(--blue); letter-spacing: 0.05em; }
+.logo-region { color: var(--accent); }
+.logo-sub { display: block; font-family: 'Roboto Mono', monospace; font-size: 0.65rem; color: var(--text-muted); }
+.dark-nav { display: flex; gap: 1.5rem; align-items: center; }
+.dark-nav a { font-family: 'Roboto Mono', monospace; font-size: 0.82rem; color: var(--text-muted); }
+.dark-nav a:hover { color: var(--blue); }
+.dark-nav-cta { color: var(--accent) !important; border: 1px solid var(--accent); padding: 0.3rem 0.7rem; }
+.dark-nav-cta:hover { background: rgba(100,255,218,0.1); }
+.header-glow { height: 1px; background: linear-gradient(90deg, transparent, var(--blue), transparent); }
+</style>
