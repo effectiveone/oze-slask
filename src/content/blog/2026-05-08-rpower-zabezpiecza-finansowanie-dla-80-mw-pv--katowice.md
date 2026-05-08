@@ -1,25 +1,22 @@
 ---
-title: "R.Power zabezpiecza finansowanie dla 80 MW PV. Dla rynku ważniejsza od same — Katowice"
+title: "R.Power zabezpiecza finansowanie dla 80 MW PV. Dla rynku ważniejsza od - Slask"
 pubDate: 2026-05-08
-description: "Analiza Śląsk: R.Power uzyskał finansowanie dla projektu Lasocice o mocy 80 MW w zachodniej Polsce. To nie jest wiadomość, która sama w"
-tags: ["OZE", "Katowice", "Śląsk", "energia odnawialna", "fotowoltaika"]
+description: "W Katowicach i calym Slasku: R.Power uzyskał finansowanie dla projektu Lasocice o mocy 80 MW w zachodniej Polsce. To nie jest wiadomość, kt"
+tags: ["OZE", "Katowice", "Slask", "energia odnawialna", "fotowoltaika"]
 ---
 
-# R.Power zabezpiecza finansowanie dla 80 MW PV. Dla rynku ważniejsza od same — Katowice
+# R.Power zabezpiecza finansowanie dla 80 MW PV. Dla rynku ważniejsza od - Slask
 
 ← Powrót do bloga R.Power zabezpiecza finansowanie dla 80 MW PV. Dla rynku ważniejsza od samej skali jest jakość projektu 08.05.2026
 
-Dla mieszkańców Śląsk temat ten jest szczególnie aktualny. Transformacja energetyczna 
-w Katowice nabiera tempa — nowe inwestycje OZE, lokalne klastry energii i rosnąca liczba 
-prosumentów zmieniają krajobraz energetyczny regionu.
+W Katowicach i calym Slasku temat ten nabiera szczegolnego znaczenia. Lokalni inwestorzy, gminy i mieszkancy
+aktywnie poszukuja mozliwosci przejscia na odnawialne zrodla energii.
 
-Pełna analiza i komentarze ekspertów dostępne na portalu [ecoaudyt.app](https://ecoaudyt.app/blog/rpower-lasocice-80mw-finansowanie-2026).
+Pelna analiza ekspercka dostepna na: ecoaudyt.app/blog/rpower-lasocice-80mw-finansowanie-2026
 
-## Jak skorzystać w Śląsk?
+Skorzystaj z bezplatnego audytu energetycznego i sprawdz ile mozesz zaoszczedzic
+w swoim domu lub firmie w regionie Slask. Doradcy ecoaudyt.app pomoga dobrac
+optymalne rozwiazanie OZE dla Twojej lokalizacji.
 
-Mieszkańcy Katowice mogą skorzystać z:
-- Dofinansowań Czyste Powietrze (do 66 000 zł)
-- Programu Moje Ciepło na pompy ciepła
-- Lokalnych aukcji prosumenckich
+Wiecej na: https://ecoaudyt.app
 
-Sprawdź możliwości dla swojego domu: [https://ecoaudyt.app](https://ecoaudyt.app)
